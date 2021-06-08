@@ -64,10 +64,10 @@
         <p class="h4 text-center bg-dark text-white">Login</p>
         <form class='' method='POST' action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>'>
             <div class='form-group'>
-                <input class='container-fluid form-control' type='text' name='username' placeholder="Username">   
+                <input class='form-control' type='text' name='username' placeholder="Username">   
             </div>
             <div class='form-group'>
-                <input class='container-fluid form-control' type='password' name='password' placeholder="Password">
+                <input class='form-control' type='password' name='password' placeholder="Password">
             </div>
             <div class='form-group'>
                 <input class='col-4 mx-auto d-block btn btn-primary' type='submit' name='submit' value='Login'>

@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     </head>
     <body>
+        <?php
+            include("connectdb.php")
+        ?>
         <!-- ======= Header ========= -->
         <header id="header">
             <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
@@ -42,7 +45,7 @@
                             </li>
                 
                             <li class="nav-item active">
-                                <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+                                <a class="nav-link" href="contact.php">LIÊN HỆ</a>
                             </li>
                         </ul>
                     </div>
@@ -52,7 +55,24 @@
         <div class="container-fluid bg-light" style="margin-top: 60px;">
             <div class="row">               
                 <div class="col-xl-8 mx-auto d-block bg-white">
-                    <p class="text-secondary font-weight-bold text-justify">Điện thoại</p>
+                    <?php
+                        $sql = "SELECT * FROM branches";
+                        $result = $conn->query($sql);
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo "<div class=''>
+                                    <p class='text-secondary font-weight-bold text-justify'>".$row["BranchName"]."</p>
+                                    <p><i class='fas fa-map-marker-alt'></i> ".$row["Addr"]."</p>
+                                    <p><i class='fas fa-phone'></i> ".$row["Tel"]."</p>
+                                    <p><i class='fas fa-fax'></i> ".$row["Fax"]."</p>
+                                    <p><i class='fas fa-clock'></i> ".$row["WorkingTime"]."</p>
+                                </div>";
+                            }
+                        }
+                        $conn->close();
+                    ?>
+
+                    <!-- <p class="text-secondary font-weight-bold text-justify">Điện thoại</p>
                     <p><i class="fas fa-phone"></i> (0243) 5 536 878 (Máy lẻ: 232)</p>
 
                     <p class="text-secondary font-weight-bold text-justify">Đường dây nóng</p>
@@ -86,7 +106,7 @@
                     <p><i class="fas fa-map-marker-alt"></i> Ô 3 – Lô 2 – Khu công nghiệp Lai Xá, Kim Chung, Hoài Đức, Hà Nội</p>
                     <p><i class="fas fa-phone"></i> Tel: (0243) 7688 770</p>
                     <p><i class="fas fa-fax"></i> Fax: (0243) 7688 773</p>
-                    <p><i class="fas fa-clock"></i> Giờ làm việc: 8h00 – 17h30 từ Thứ 2 đến Thứ 6</p>
+                    <p><i class="fas fa-clock"></i> Giờ làm việc: 8h00 – 17h30 từ Thứ 2 đến Thứ 6</p> -->
                 </div>              
             </div>
         </div>

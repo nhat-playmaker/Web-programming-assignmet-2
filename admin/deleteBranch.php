@@ -2,11 +2,11 @@
     include("connectdb.php");
 ?>
 <?php
-    if (isset($_GET['UserId'])) {
-        $sql = "DELETE FROM users WHERE UserId=".$_GET['UserId']."";
+    if (isset($_GET['BranchId'])) {
+        $sql = "DELETE FROM branches WHERE BranchId=".$_GET['BranchId']."";
         if ($conn->query($sql) === TRUE) {
             $conn->close();
-            header('Location: user.php');
+            header('Location: branch.php');
         }
         else {
             echo "Error: ".$sql."<br>".$conn->error;
