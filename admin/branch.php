@@ -83,7 +83,7 @@
                                             </button>
                                         </div>
                                         <div class='modal-body'>
-                                            <form id='Form".$row["BranchId"]."' method='POST' action='";echo htmlspecialchars("'modifyBranch.php?BranchId=".$row["BranchId"]."'"); echo "'>
+                                            <form id='Form".$row["BranchId"]."' method='POST' action='modifyBranch.php?BranchId=".$row["BranchId"]."'>
                                                 <div class='form-group'>
                                                     <input class='form-control' type='text' name='name' placeholder='Branch Name' value='".$row["BranchName"]."' required>
                                                 </div>
