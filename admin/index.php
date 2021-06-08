@@ -22,7 +22,7 @@ include('database_connection.php');
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link href = "css/jquery-ui.css" rel = "stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
