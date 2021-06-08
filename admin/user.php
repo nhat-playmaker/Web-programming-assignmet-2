@@ -27,10 +27,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="home-menu">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="product.php">PRODUCT</a>
-                        </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="index.php">PRODUCT</a>
+                        </li>
+                        <li class="nav-item active">
                             <a class="nav-link" href="user.php">USER</a>
                         </li>
                         <li class="nav-item">

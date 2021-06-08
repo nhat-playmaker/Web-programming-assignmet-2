@@ -70,35 +70,35 @@ if(isset($_POST["action"]))
 			}
 
 			$output .= '
-			<div class="col-sm-3 col-lg-3 col-md-3">
+			<div class="col-sm-12 col-md-6 col-lg-4">
 				<div class="car_box">
 
-					<img src="images/'. $row['carImage'] .'" alt="" class="img-responsive" >
-					<div class="car_name"><h5 align="center"><strong><a href="#">'. $row['carName'] .'</a></strong></h5></div> 
+					<img src="images/'. $row['carImage'] .'" alt="" class="img-fluid" >
+					<div class="car_name"><p class="text-center"><strong><a href="#">'. $row['carName'] .'</a></strong></p></div> 
 
-					<h4 style="text-align:center;" class="text-danger" >'. $res.' VND</h4>
+					<p class="text-danger text-center" >'. $res.' VND</p>
 					<p class="disp-info">
 					Mẫu xe : '. $row['carType'].' <br />
 					Nhãn hiệu : '. $row['carBrand'] .' <br />
 					Nhiên liệu : '. $row['carFuel'] .' <br />
 					Số chỗ ngồi : '. $row['carSeat'] .' <br/>
 					Xuất xứ: '. $row['carOrigin'].'  </p>
+					<div class="row justify-content-center">
+						<div class="col-6">
+							<form method="post" action="editCar.php">
+								<input type="text" value="' . $row['carID'] .'" name ="editCarID" hidden>
+								<input type="submit" name="btn-edit" id="btn-edit" class="btn btn-success btn-block" value="EDIT" />
+							</form>
+						</div>
 
-					<div class="btn-inline">
-						<form method="post" action="editCar.php">
-							<input type="text" value="' . $row['carID'] .'" name ="editCarID" hidden>
-							<input type="submit" name="btn-edit" id="btn-edit" class="btn btn-success" value="EDIT" />
-						</form>
+						<div class="col-6">
+							<form method="post" action="delCar.php">
+								<input type="text" value="' . $row['carID'] .'" name ="delCarID" hidden>
+								<input type="submit" name="btn-del" id="btn-del" class="btn btn-danger btn-block" value="DEL" />
+							</form>
+						</div>
 					</div>
-
-					<div class="btn-inline">
-						<form method="post" action="delCar.php">
-							<input type="text" value="' . $row['carID'] .'" name ="delCarID" hidden>
-							<input type="submit" name="btn-del" id="btn-del" class="btn btn-danger" value="DELETE" />
-						</form>
-					</div>
-
-
+					
 				</div>
 
 			</div>

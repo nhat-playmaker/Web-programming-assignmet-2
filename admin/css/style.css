@@ -50,7 +50,7 @@ footer {
     padding:16px; 
     margin-bottom:20px; 
     height: 100%;
-    width: 200px;
+    width: 100%;
     transition: transform .2s; /* Animation */
 }
 
@@ -60,10 +60,10 @@ footer {
     background-color: rgb(238, 223, 223);
 }
 
-.car_name {
+/* .car_name {
     width: auto;
     height: 35px;
-}
+} */
 
 .btn-inline {
     margin-top: 10px;

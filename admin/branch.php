@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +14,9 @@
 </head>
 <body>
     <?php
+        if (!isset($_SESSION["username"])) {
+            header("Location: login.php");
+        }
         include("connectdb.php");
     ?>
     <div class='col-lg-10 mx-auto'>
@@ -23,13 +27,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="home-menu">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.php">PRODUCT</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="user.php">USER</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="branch.php">BRANCH</a>
                         </li>
                         <li class="nav-item">
