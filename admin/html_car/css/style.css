@@ -355,10 +355,10 @@ color: #fff;
     padding: 0;
 }
 
-#hero-product {
+#hero-product-corolla {
     width: 100%;
     height: calc(50vh - 72px);
-    background: url("../images/productpage/car01.jpg") center center;
+    background: url("./../images/corolla_cross_18V/header.jpg") center center;
     background-size: cover;
     position: relative;
     margin-top: 72px;
@@ -1060,6 +1060,145 @@ right: 15px;
     color: #e62b2b;
 }
 
-.aaa {
-    font-size: 100px;
+
+.btn-gray {
+    width: 40px;
+    height: 40px;
+    border: 2px solid gray;
+    background-color: gray;
+    display: inline-block;
+    margin-right: 15px;
+    transition: transform .2s; /* Animation */
 }
+.btn-gray:hover {
+    transform: scale(1.2);
+}
+
+.btn-black {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    background-color: black;
+    display: inline-block;
+    margin-right: 15px;
+    transition: transform .2s; /* Animation */
+}
+.btn-black:hover {
+    transform: scale(1.2);
+}
+
+.btn-red {
+    width: 40px;
+    height: 40px;
+    border: 2px solid red;
+    background-color: red;
+    display: inline-block;
+    margin-right: 15px;
+    transition: transform .2s; /* Animation */
+}
+.btn-red:hover {
+    transform: scale(1.2);
+}
+
+.btn-white {
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(206, 200, 200);
+    background-color: rgb(206, 200, 200);
+    display: inline-block;
+    margin-right: 15px;
+    transition: transform .2s; /* Animation */
+}
+.btn-white:hover {
+    transform: scale(1.2);
+}
+
+.btn-lightGray {
+    width: 40px;
+    height: 40px;
+    border: 2px solid lightgray;
+    background-color: lightgray;
+    display: inline-block;
+    margin-right: 15px;
+    transition: transform .2s; /* Animation */
+}
+.btn-lightGray:hover {
+    transform: scale(1.2);
+}
+
+.btn-brown {
+    width: 40px;
+    height: 40px;
+    border: 2px solid brown;
+    background-color: brown;
+    display: inline-block;
+    margin-right: 15px;
+    transition: transform .2s; /* Animation */
+}
+.btn-brown:hover {
+    transform: scale(1.2);
+}
+
+.btn-blue {
+    width: 40px;
+    height: 40px;
+    border: 2px solid blue;
+    background-color: blue;
+    display: inline-block;
+    margin-right: 15px;
+    transition: transform .2s; /* Animation */
+}
+.btn-blue:hover {
+    transform: scale(1.2);
+}
+
+#textColorDescript {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.line {
+    width: 300px;
+    height: 1px;
+    border: 1px solid black;
+}
+
+.p-car-name {
+    font-size: 30px;
+    color: brown;
+}
+
+#image-car {
+    transition: transform .2s;
+}
+
+#image-car:hover {
+    transform: scale(1.1);
+}
+
+#album-corolla img {
+    width: 550px;
+    height: 100%;
+}
+
+.btn-technical {
+    padding: 10px;
+    margin-right: 5px;
+    width: auto;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border: 2px solid #dd2626; /* Green */
+    border-radius: 5px;
+}
+.btn-technical:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
