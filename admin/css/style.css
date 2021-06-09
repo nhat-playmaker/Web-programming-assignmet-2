@@ -1,0 +1,74 @@
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 160px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.car_box {
+    border:1px solid #ccc; 
+    border-radius:5px; 
+    padding:16px; 
+    margin-bottom:20px; 
+    height: 100%;
+    width: 100%;
+    transition: transform .2s; /* Animation */
+}
+
+.car_box:hover {
+    box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+    background-color: rgb(238, 223, 223);
+}
+
+/* .car_name {
+    width: auto;
+    height: 35px;
+} */
+
+.btn-inline {
+    margin-top: 10px;
+    display: inline-block;
+    height: 100%;
+    width: auto;
+}
+
