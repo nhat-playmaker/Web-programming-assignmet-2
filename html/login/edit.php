@@ -141,8 +141,17 @@
 						ImageUrl: ImageUrl
 					},
 					success: function (data) {
-						console.log(data)
-						// window.location.reload()
+						if (data){
+							localStorage.setItem("UserId", UserId)
+							localStorage.setItem("Username", Username)
+							localStorage.setItem("Password", Password)
+							localStorage.setItem("FirstName", FirstName)
+							localStorage.setItem("LastName", LastName)
+							localStorage.setItem("Age", Age)
+							localStorage.setItem("Email", Email)
+							localStorage.setItem("ImageUrl", ImageUrl)
+						}
+						window.location.reload()
 					}
 				});
 			})
