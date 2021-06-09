@@ -74,7 +74,7 @@ if(isset($_POST["action"]))
 				<div class="car_box">
 
 					<img src="../admin/images/'. $row['carImage'] .'" alt="" class="img-fluid" >
-					<div class="car_name"><p class="text-center"><strong><a href="../admin/html_car/index.php?carID=1">'. $row['carName'] .'</a></strong></p></div> 
+					<div class="car_name"><p class="text-center"><strong><a href="../admin/html_car/index.php">'. $row['carName'] .'</a></strong></p></div> 
 
 					<p class="text-danger text-center" >'. $res.' VND</p>
 					<p class="disp-info">

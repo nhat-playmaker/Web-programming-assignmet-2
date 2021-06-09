@@ -29,14 +29,13 @@ include('connect.php');
     <link href = "../admin/css/jquery-ui.css" rel = "stylesheet">
     
     <!-- Custom CSS -->
-    <link href="../admin/css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
-
-    <!-- ======= Header ========= -->
-    <header id="header">
+    
+<header id="header">
       <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -48,19 +47,19 @@ include('connect.php');
           <div class="collapse navbar-collapse" id="home-menu">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">TRANG CHỦ</a>
+                <a class="nav-link" href="index.php">TRANG CHỦ</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="intro.html">GIỚI THIỆU</a>
+                <a class="nav-link" href="intro.php">GIỚI THIỆU</a>
               </li>
               
               <li class="nav-item active">
-                <a class="nav-link" href="productpage.html">SẢN PHẨM</a>
+                <a class="nav-link" href="productpage.php">SẢN PHẨM</a>
               </li>
       
               <li class="nav-item">
-                <a class="nav-link" href="service.html">DỊCH VỤ</a>
+                <a class="nav-link" href="service.php">DỊCH VỤ</a>
               </li>
     
               <li class="nav-item">
@@ -80,7 +79,7 @@ include('connect.php');
     </section> <!-- End Hero -->
 
 
-    <main id="main" class="mb-10" style="margin-top: 120px;">
+    <main id="main">
         <section id="features" class="features">
             <div class="container">
                 <h2>SẢN PHẨM NỔI BẬT</h2>
@@ -142,11 +141,16 @@ include('connect.php');
         
             </div>
         </section><!-- End Features Section -->
-    </main> <!-- End main content -->
-    
+
     <!-- Page Content -->
     <div class="container">
 
+    <div class="container nav-product">
+                <h3>SẢN PHẨM<span style="color: rgb(209, 85, 85);"> TOYOTA </span></h3>
+                <h2 style="margin-bottom: 20px;">Tất cả các phiên bản xe</h2>
+                
+    </div>	
+    
         <div class="row">
             <div class="col-md-3">		
 
@@ -218,6 +222,7 @@ include('connect.php');
             </div>
 
             <div class="col-md-9">
+
                 <div class="row filter_data">
 
                 </div>
@@ -229,7 +234,7 @@ include('connect.php');
 #loading
 {
 	text-align:center; 
-	background: url('loader.gif') no-repeat center; 
+	background: url('../admin/loader.gif') no-repeat center; 
 	height: 150px;
 }
 </style>
@@ -307,7 +312,7 @@ $(document).ready(function(){
                     image:image},
             success:function(data){
                 alert("You have successfully added the new car");
-                header("location: index.php");
+                window.location.reload();
             }
         });
     });
@@ -320,4 +325,3 @@ $(document).ready(function(){
 </body>
 
 </html>
-
