@@ -26,23 +26,23 @@
                     <div class="collapse navbar-collapse" id="home-menu">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">TRANG CHỦ</a>
+                                <a class="nav-link" href="index.php">TRANG CHỦ</a>
                             </li>
             
                             <li class="nav-item">
-                                <a class="nav-link active" href="intro.html">GIỚI THIỆU</a>
+                                <a class="nav-link active" href="intro.php">GIỚI THIỆU</a>
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="productpage.html">SẢN PHẨM</a>
+                                <a class="nav-link" href="productpage.php">SẢN PHẨM</a>
                             </li>
                     
                             <li class="nav-item">
-                                <a class="nav-link" href="service.html">DỊCH VỤ</a>
+                                <a class="nav-link" href="service.php">DỊCH VỤ</a>
                             </li>
                 
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+                                <a class="nav-link" href="contact.php">LIÊN HỆ</a>
                             </li>
                         </ul>
                     </div>

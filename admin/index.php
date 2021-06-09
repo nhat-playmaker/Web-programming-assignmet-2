@@ -37,7 +37,7 @@ include('database_connection.php');
         	<br />
         	<h2>Toyota test</h2>
         	<br />
-            <div class="col-md-3">		
+            <div class="col-md-3">		    
 
                 <!-- Brand -->
                 <div class="list-group">
@@ -99,6 +99,27 @@ include('database_connection.php');
                     ?>
                     <div class="list-group-item checkbox">
                         <label><input type="checkbox" class="common_selector seat" value="<?php echo $row['carSeat']; ?>"  > <?php echo $row['carSeat']; ?> chỗ ngồi</label>
+                    </div>
+                    <?php
+                    }
+                    ?>	
+                </div>
+
+
+                <div class="list-group">
+					<h3>Mẫu xe</h3>
+					<?php
+                    $query = "
+                    SELECT DISTINCT (carType) FROM car_details WHERE carStatus = '1' ORDER BY carType DESC
+                    ";
+                    $statement = $connect->prepare($query);
+                    $statement->execute();
+                    $result = $statement->fetchAll();
+                    foreach($result as $row)
+                    {
+                    ?>
+                    <div class="list-group-item checkbox">
+                        <label><input type="checkbox" class="common_selector type" value="<?php echo $row['carType']; ?>"  > <?php echo $row['carType']; ?></label>
                     </div>
                     <?php
                     }
@@ -288,11 +309,3 @@ $(document).ready(function(){
 </body>
 
 </html>
-
-<!-- <div class="btn-inline">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-                                    </div>
-
-                                    <div class="btn-inline">
-                                        <input type="submit" name="btn-add" id="btn-add" class="btn btn-primary" value="Hoàn tất" />
-                                    </div> -->

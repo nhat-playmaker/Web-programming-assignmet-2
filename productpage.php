@@ -1,14 +1,28 @@
+<?php include('./admin/database_connection.php'); ?>
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SẢN PHẨM | TOYOTA</title>
+    <title>TRANG CHỦ | TOYOTA</title>
+
     <link rel="shortcut icon" href="images/icon.png" />
-    
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- <script src="js/jquery-1.10.2.min.js"></script> -->
+    <!-- <script src="js/jquery-ui.js"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
+    
+    <!-- <link href = "css/jquery-ui.css" rel="stylesheet" type="text/css"> -->
+    <!-- Custom CSS -->
+    <link  rel="stylesheet" type="text/css" href="./style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
@@ -25,23 +39,23 @@
           <div class="collapse navbar-collapse" id="home-menu">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">TRANG CHỦ</a>
+                <a class="nav-link" href="index.php">TRANG CHỦ</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="intro.html">GIỚI THIỆU</a>
+                <a class="nav-link" href="intro.php">GIỚI THIỆU</a>
               </li>
               
               <li class="nav-item active">
-                <a class="nav-link" href="productpage.html">SẢN PHẨM</a>
+                <a class="nav-link" href="productpage.php">SẢN PHẨM</a>
               </li>
       
               <li class="nav-item">
-                <a class="nav-link" href="service.html">DỊCH VỤ</a>
+                <a class="nav-link" href="service.php">DỊCH VỤ</a>
               </li>
     
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+                <a class="nav-link" href="contact.php">LIÊN HỆ</a>
               </li>
             </ul>
           </div>
@@ -126,431 +140,182 @@
                 <h2 style="margin-bottom: 20px;">Tất cả các phiên bản xe</h2>
                 
                 <div class="row">
-                  <div class="col-lg-3">
-                    <div data-target="#collapse-data-mauxe" class="btn-drop-car-filter" data-toggle="collapse">
-                      MẪU XE
-                    </div>
-                    <div id="collapse-data-mauxe" class="collapse">
-                      <form action="#">
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Wigo (2)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Vios (6)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Camry (2)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Land Cruiser (1)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Alpahrd luxury (1)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Rush (1)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Innova (4)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Avanza (2)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Hiace (1)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Granvia (1)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Yaris (1)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Corolla Cross (3)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Corolla Altis (2)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Hilux (4)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Fortuner (7)
-                          </label>
-                        </div>
-                      </form>
-                    </div>
+                  
+                <div class="col-md-3">		    
 
-                    <div data-target="#collapse-data-gia" class="btn-drop-car-filter" data-toggle="collapse">
-                      GIÁ                      
-                    </div>
-                    <div id="collapse-data-gia" class="collapse">
-                      <form action="#">
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> 0 - 500 triệu
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> 500 triệu - 1 tỉ
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">1 tỉ - 2 tỉ
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">2 tỉ - 3 tỉ
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">3 tỉ - 4 tỉ
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">Trên 4 tỉ
-                          </label>
-                        </div>
-                      </form>
-                    </div>
-                    
-                    <div data-target="#collapse-data-nhienlieu" class="btn-drop-car-filter" data-toggle="collapse">
-                      NHIÊN LIỆU
-                    </div>
-                    <div id="collapse-data-nhienlieu" class="collapse">
-                      <form action="#">
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> Xăng (28)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> Dầu (11)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> Xăng + điện (1)
-                          </label>
-                        </div>
-                      </form>
-                    </div>
+<!-- Brand -->
+<div class="list-group">
+<h3>Nhãn hiệu</h3>
+    <div style="height: 180px; overflow-y: auto; overflow-x: hidden;">
+<?php
 
-                    <div data-target="#collapse-data-sochongoi" class="btn-drop-car-filter" data-toggle="collapse">
-                      SỐ CHỖ NGỒI
+    $query = "SELECT DISTINCT (carBrand) FROM car_details WHERE carStatus = '1' ORDER BY carID DESC";
+    $statement = $connect->prepare($query);
+    $statement->execute();
+    $result = $statement->fetchAll();
+    foreach($result as $row)
+    {
+    ?>
+    <div class="list-group-item checkbox">
+        <label><input type="checkbox" class="common_selector brand" value="<?php echo $row['carBrand']; ?>"  > <?php echo $row['carBrand']; ?></label>
+    </div>
+    <?php
+    }
+
+    ?>
+    </div>
+</div>
+
+<div class="list-group">
+<h3>Nhiên liệu</h3>
+    <?php
+
+    $query = "
+    SELECT DISTINCT (carFuel) FROM car_details WHERE carStatus = '1' ORDER BY carFuel DESC
+    ";
+    $statement = $connect->prepare($query);
+    $statement->execute();
+    $result = $statement->fetchAll();
+    foreach($result as $row)
+    {
+    ?>
+    <div class="list-group-item checkbox">
+        <label><input type="checkbox" class="common_selector fuel" value="<?php echo $row['carFuel']; ?>" > <?php echo $row['carFuel']; ?></label>
+    </div>
+    <?php    
+    }
+
+    ?>
+</div>
+
+
+<div class="list-group">
+<h3>Số chỗ ngồi</h3>
+<?php
+    $query = "
+    SELECT DISTINCT (carSeat) FROM car_details WHERE carStatus = '1' ORDER BY carSeat DESC
+    ";
+    $statement = $connect->prepare($query);
+    $statement->execute();
+    $result = $statement->fetchAll();
+    foreach($result as $row)
+    {
+    ?>
+    <div class="list-group-item checkbox">
+        <label><input type="checkbox" class="common_selector seat" value="<?php echo $row['carSeat']; ?>"  > <?php echo $row['carSeat']; ?> chỗ ngồi</label>
+    </div>
+    <?php
+    }
+    ?>	
+</div>
+
+
+<div class="list-group">
+<h3>Mẫu xe</h3>
+<?php
+    $query = "
+    SELECT DISTINCT (carType) FROM car_details WHERE carStatus = '1' ORDER BY carType DESC
+    ";
+    $statement = $connect->prepare($query);
+    $statement->execute();
+    $result = $statement->fetchAll();
+    foreach($result as $row)
+    {
+    ?>
+    <div class="list-group-item checkbox">
+        <label><input type="checkbox" class="common_selector type" value="<?php echo $row['carType']; ?>"  > <?php echo $row['carType']; ?></label>
+    </div>
+    <?php
+    }
+    ?>	
+</div>
+</div>
+
+<div class="col-md-9">
+<!-- <form method="post">
+    <div class="form-group">
+        <input type="submit" name="login" id="login" class="btn btn-primary" value="+ ADD CAR" />
+    </div>
+</form> -->
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="" style="margin-bottom: 20px;">+ ADD CAR</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <form method="post" action="addCar.php">
+                    <div class="form-group">
+                        <label for="car-name" class="col-form-label">Tên xe:</label>
+                        <input type="text" class="form-control" id="carName">
                     </div>
-                    <div id="collapse-data-sochongoi" class="collapse">
-                      <form action="#">
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> 5 chỗ (20)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> 7 chỗ (15)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> 8 chỗ (3)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> 15 chỗ (1)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> 9 chỗ (1)
-                          </label>
-                        </div>
-                      </form>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Hãng xe:</label>
+                        <input type="text" class="form-control" id="carBrand">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Giá xe:</label>
+                        <input type="text" class="form-control" id="carPrice">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Loại nhiên liệu:</label>
+                        <select class="form-control" id="carFuel">
+                            <option>Xăng</option>
+                            <option>Dầu</option>
+                            <option>Xăng + Điện</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Số chỗ ngồi:</label>
+                        <select class="form-control" id="carSeat">
+                            <option>5</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>15</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Kiểu dáng xe:</label>
+                        <input type="text" class="form-control" id="carType">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Xuất xứ:</label>
+                        <select class="form-control" id="carOrigin">
+                            <option>Xe trong nước</option>
+                            <option>Xe nhập khẩu</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Tên file ảnh:</label>
+                        <input type="text" class="form-control" id="carImage">
                     </div>
 
-                    <div data-target="#collapse-data-kieudang" class="btn-drop-car-filter" data-toggle="collapse">
-                      KIỂU DÁNG
-                    </div>
-                    <div id="collapse-data-kieudang" class="collapse">
-                      <form action="#">
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> Sedan (10)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> Hatcback (3)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> SUV (14)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> Đa dụng (8)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> Bán tải (4)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> Thương mại (1)
-                          </label>
-                        </div>
-                      </form>
-                    </div>
+                </form>
+            </div>
 
-                    <div data-target="#collapse-data-xuatxu" class="btn-drop-car-filter" data-toggle="collapse">
-                      XUẤT XỨ
-                    </div>
-                    <div id="collapse-data-xuatxu" class="collapse">
-                      <form action="#">
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> Xe trong nước (18)
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value=""> Xe nhập khẩu (22)
-                          </label>
-                        </div>
-                      </form>
-                    </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary" id="add-data">Xác nhận</button>
+            </div>
 
-                  </div>
-  
-                  <div class="col-lg-9">
-                    <div class="row">
-                      <div class="col-lg-4 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-                        <div class="icon-box-car">
-                          <img src="images/productpage-cars/car01.png" alt="01" class="img-car">
-                          <h3>COROLLA CROSS 1.8V</h3>
-                          <p><i class="material-icons">paid</i> 820,000,000 VND</p> <br>
-                          <ul > 
-                            <li>5 chỗ</li>
-                            <li>SUV</li>
-                            <li>Xăng</li>
-                            <li>Xe nhập khẩu</li>
-                            <li>Hộp số tự động vô cấp CVT</li>
-                            <li>Dung tích 1798 cm3</li>
-                          </ul>
-                        </div>
-                      </div>
-          
-                      <div class="col-lg-4 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-                        <div class="icon-box-car">
-                          <img src="images/productpage-cars/car02.png" alt="01" class="img-car">
-                          <h3>COROLLA CROSS 1.8HV</h3>
-                          <p><i class="material-icons">paid</i> 910,000,000 VND</p> <br>
-                          <ul > 
-                            <li>5 chỗ</li>
-                            <li>SUV</li>
-                            <li>Xăng + Điện</li>
-                            <li>Xe nhập khẩu</li>
-                            <li>Hộp số tự động vô cấp CVT</li>
-                            <li>Tính năng an toàn TSS</li>
-                          </ul>
-                        </div>
-                      </div>   
+        </div>
+    </div>
+</div>
 
-                      <div class="col-lg-4 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-                        <div class="icon-box-car">
-                          <img src="images/productpage-cars/car03.png" alt="01" class="img-car">
-                          <h3>COROLLA CROSS 1.8G</h3>
-                          <p><i class="material-icons">paid</i> 720,000,000 VND</p> <br>
-                          <ul > 
-                            <li>5 chỗ</li>
-                            <li>SUV</li>
-                            <li>Xăng</li>
-                            <li>Xe nhập khẩu</li>
-                            <li>Số tự động vô cấp CVT</li>
-                          </ul>
-                        </div>
-                      </div>
+<br />
+<div class="row filter_data">
 
-                      <div class="col-lg-4 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-                        <div class="icon-box-car">
-                          <img src="images/productpage-cars/car04.png" alt="01" class="img-car">
-                          <h3>Wigo 5MT</h3>
-                          <p><i class="material-icons">paid</i> 352,000,000 VND</p> <br>
-                          <ul > 
-                            <li>5 chỗ</li>
-                            <li>Hatchback</li>
-                            <li>Xăng</li>
-                            <li>Xe nhập khẩu</li>
-                            <li>Số sàn 5 cấp</li>
-                          </ul>
-                        </div>
-                      </div>
+</div>
+</div>
 
-                      <div class="col-lg-4 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-                        <div class="icon-box-car">
-                          <img src="images/productpage-cars/car05.png" alt="01" class="img-car">
-                          <h3>Avanza AT</h3>
-                          <p><i class="material-icons">paid</i> 612,000,000 VND</p> <br>
-                          <ul > 
-                            <li>7 chỗ</li>
-                            <li>Đa dụng</li>
-                            <li>Xăng</li>
-                            <li>Xe nhập khẩu</li>
-                            <li>Số tự động 4 cấp</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-4 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-                        <div class="icon-box-car">
-                          <img src="images/productpage-cars/car06.png" alt="01" class="img-car">
-                          <h3>Avanza MT</h3>
-                          <p><i class="material-icons">paid</i> 544,000,000 VND</p> <br>
-                          <ul > 
-                            <li>7 chỗ</li>
-                            <li>Đa dụng</li>
-                            <li>Xăng</li>
-                            <li>Xe nhập khẩu</li>
-                            <li>Số sàn 5 cấp</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-4 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-                        <div class="icon-box-car">
-                          <img src="images/productpage-cars/car07.png" alt="01" class="img-car">
-                          <h3>Rush S 1.5AT</h3>
-                          <p><i class="material-icons">paid</i> 634,000,000 VND</p> <br>
-                          <ul > 
-                            <li>7 chỗ</li>
-                            <li>SUV</li>
-                            <li>Xăng</li>
-                            <li>Xe nhập khẩu</li>
-                            <li>Số tự sàn 5 cấp</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-4 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-                        <div class="icon-box-car">
-                          <img src="images/productpage-cars/car08.png" alt="01" class="img-car">
-                          <h3>Vios GR-S</h3>
-                          <p><i class="material-icons">paid</i> 638,000,000 VND</p> <br>
-                          <ul > 
-                            <li>5 chỗ</li>
-                            <li>Sedan</li>
-                            <li>Xăng</li>
-                            <li>Xe trong nước</li>
-                            <li>Sớ tự động vô cấp</li>
-                            <li>Động cơ xăng dung tích 1.496 cm3</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-4 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-                        <div class="icon-box-car">
-                          <img src="images/productpage-cars/car09.png" alt="01" class="img-car">
-                          <h3>Vios 1.5E CVT (3 túi khí)</h3>
-                          <p><i class="material-icons">paid</i> 531,000,000 VND</p> <br>
-                          <ul > 
-                            <li>5 chỗ</li>
-                            <li>Sedan</li>
-                            <li>Xăng</li>
-                            <li>Xe trong nước</li>
-                            <li>Sớ tự động vô cấp</li>
-                            <li>Động cơ xăng dung tích 1.496 cm3</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-4 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-                        <div class="icon-box-car">
-                          <img src="images/productpage-cars/car10.png" alt="01" class="img-car">
-                          <h3>Vios 1.5E MT (3 túi khí)</h3>
-                          <p><i class="material-icons">paid</i> 478,000,000 VND</p> <br>
-                          <ul > 
-                            <li>5 chỗ</li>
-                            <li>Sedan</li>
-                            <li>Xăng</li>
-                            <li>Xe trong nước</li>
-                            <li>Sớ tay 5 cấp</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-4 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-                        <div class="icon-box-car">
-                          <img src="images/productpage-cars/car11.png" alt="01" class="img-car">
-                          <h3>Vios 1.5ECVT</h3>
-                          <p><i class="material-icons">paid</i> 581,000,000 VND</p> <br>
-                          <ul > 
-                            <li>5 chỗ</li>
-                            <li>Sedan</li>
-                            <li>Xăng</li>
-                            <li>Xe trong nước</li>
-                            <li>Sớ tự động vô cấp</li>
-                            <li>Động cơ xăng dung tích 1.496 cm3</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-4 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-                        <div class="icon-box-car">
-                          <img src="images/productpage-cars/car10.png" alt="01" class="img-car">
-                          <h3>Vios 1.5E MT</h3>
-                          <p><i class="material-icons">paid</i> 495,000,000 VND</p> <br>
-                          <ul > 
-                            <li>5 chỗ</li>
-                            <li>Sedan</li>
-                            <li>Xăng</li>
-                            <li>Xe trong nước</li>
-                            <li>Sớ tay 5 cấp</li>
-                          </ul>
-                        </div>
-                      </div>
-                
-                    </div>
-                  </div>
                 </div>
             </div>
                 

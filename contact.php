@@ -17,7 +17,7 @@
         <header id="header">
             <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                     <img src="images/logo.png" alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#home-menu" aria-controls="home-menu" aria-expanded="false" aria-label="label">
@@ -26,23 +26,23 @@
                     <div class="collapse navbar-collapse" id="home-menu">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">TRANG CHỦ</a>
+                                <a class="nav-link" href="index.php">TRANG CHỦ</a>
                             </li>
             
                             <li class="nav-item">
-                                <a class="nav-link" href="intro.html">GIỚI THIỆU</a>
+                                <a class="nav-link" href="intro.php">GIỚI THIỆU</a>
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="productpage.html">SẢN PHẨM</a>
+                                <a class="nav-link" href="productpage.php">SẢN PHẨM</a>
                             </li>
                     
                             <li class="nav-item">
-                                <a class="nav-link" href="service.html">DỊCH VỤ</a>
+                                <a class="nav-link" href="service.php">DỊCH VỤ</a>
                             </li>
                 
                             <li class="nav-item active">
-                                <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+                                <a class="nav-link" href="contact.php">LIÊN HỆ</a>
                             </li>
                         </ul>
                     </div>

@@ -41,19 +41,19 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="intro.html">GIỚI THIỆU</a>
+                <a class="nav-link" href="intro.php">GIỚI THIỆU</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="productpage.html">SẢN PHẨM</a>
+                <a class="nav-link" href="productpage.php">SẢN PHẨM</a>
               </li>
       
               <li class="nav-item">
-                <a class="nav-link" href="service.html">DỊCH VỤ</a>
+                <a class="nav-link" href="service.php">DỊCH VỤ</a>
               </li>
     
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+                <a class="nav-link" href="contact.php">LIÊN HỆ</a>
               </li>
             </ul>
           </div>
@@ -578,21 +578,31 @@
               <h2>Đại lý của bạn</h2>
               <div class="line"></div>
               <form action="#" method="POST">
-                <select name="region" id="select-region">
-                  <option value="opt-1">Miền Bắc</option>
-                  <option value="opt-2">Miền Trung</option>
-                  <option value="opt-3">Miền Nam</option>
-                </select> <br>
-                <input type="text" id="contact-province" name="province" placeholder="Tỉnh/Thành"> <br>
-                <input type="text" id="contact-ward" name="ward" placeholder="Quận/Huyện"> <br>
-                <input type="submit" id="contact-place" name="place" value="Tìm đại lý">
+
+                <div class="form-group">
+                  <select name="region" id="select-region">
+                    <option value="opt-1">Miền Bắc</option>
+                    <option value="opt-2">Miền Trung</option>
+                    <option value="opt-3">Miền Nam</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <input type="text" id="contact-province" name="province" placeholder="Tỉnh/Thành">
+                </div>
+
+                <div class="form-group">
+                  <input type="text" id="contact-ward" name="ward" placeholder="Quận/Huyện"> 
+                </div>
+
+                <div class="form-group">
+                  <input type="submit" class="btn btn-primary" name="place" value="Tìm đại lý">
+                </div>
               </form>
             </div>
           </div>
         </div>
       </section> <!-- End Contact and Find Service Section -->
-
-      <p class="aaa">alkdaslkakmdlkamsdlamdma</p>
     </main> <!-- End main content -->
 
    
