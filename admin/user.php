@@ -19,7 +19,7 @@
         }
         include("connectdb.php");
     ?>
-    <div class='col-lg-10 mx-auto bg-light'>
+    <div class='col-lg-10 mx-auto'>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid bg-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#home-menu" aria-controls="home-menu" aria-expanded="false" aria-label="label">
