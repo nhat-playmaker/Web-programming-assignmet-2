@@ -51,7 +51,6 @@
                 if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
                         echo "<div class='d-flex border rounded-lg mb-3 align-items-center p-2'>
-
                             <div class='mr-auto' type='button' data-toggle='modal' data-target='#Id".$row["BranchId"]."'>".$row["BranchName"]."</div>
                             <div class='modal fade' id='Id".$row["BranchId"]."' tabindex='-1' aria-labelledby='Label".$row["BranchId"]."' aria-hidden='true'>
                                 <div class='modal-dialog'>
@@ -112,19 +111,18 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class='col-3'><button class='btn btn-danger mx-auto d-block' data-toggle='modal' data-target='#Warning".$row["BranchId"]."'><i class='fas fa-trash text-white'></i></button></div>
                             <div class='modal fade' id='Warning".$row["BranchId"]."' tabindex='-1' aria-labelledby='Warn".$row["BranchId"]."' aria-hidden='true'>
                                 <div class='modal-dialog modal-dialog-centered'>
                                     <div class='modal-content'>
                                         <div class='modal-header'>
-                                            <h5 class='modal-title text-danger' id='Warn".$row["BranchId"]."'>Warning</h5>
+                                            <p class='h5 modal-title text-danger' id='Warn".$row["BranchId"]."'>Warning</p>
                                             <button class='close' data-dismiss='modal' aria-label='Close'>
                                                 <span aria-hidden='true'>&times;</span>
                                             </button>
                                         </div>
                                         <div class='modal-body'>
-                                            <p>Are you sure to delete this account?</p>
+                                            <p>Are you sure to delete this branch?</p>
                                         </div>
                                         <div class='modal-footer'>
                                             <button class='btn btn-secondary' data-dismiss='modal'>No</button>
@@ -133,7 +131,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>";
                     }
                 }
